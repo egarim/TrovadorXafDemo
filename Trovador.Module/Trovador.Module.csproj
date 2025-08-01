@@ -1,0 +1,50 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <CheckEolTargetFramework>false</CheckEolTargetFramework>
+    <Deterministic>false</Deterministic>
+    <AssemblyVersion>1.0.*</AssemblyVersion>
+    <FileVersion>1.0.0.0</FileVersion>
+    <Configurations>Debug;Release;EasyTest</Configurations>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Platforms>AnyCPU;x64</Platforms>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Remove="Examples\Michelangelo\500px-Tondo_Doni,_por_Miguel_Ángel.jpg" />
+    <None Remove="Examples\Michelangelo\DoniTondo.json" />
+    <None Remove="Examples\ReneMagritte\Magritte_TheSonOfMan.jpg" />
+    <None Remove="Examples\ReneMagritte\TheSonOfMan.json" />
+    <None Remove="Model.DesignedDiffs.xafml" />
+    <None Remove="Prompts\Adult visitor %2830-second read%29.txt" />
+    <None Remove="Prompts\Expert - deeper context.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Examples\Michelangelo\DoniTondi\image.jpg" />
+    <EmbeddedResource Include="Examples\Michelangelo\DoniTondi\Description.json" />
+    <EmbeddedResource Include="Examples\ReneMagritte\TheSonOfMan\image.jpg" />
+    <EmbeddedResource Include="Examples\ReneMagritte\TheSonOfMan\Description.json" />
+    <EmbeddedResource Include="Model.DesignedDiffs.xafml" />
+    <EmbeddedResource Include="Prompts\Adult visitor (30-second read).txt" />
+    <EmbeddedResource Include="Prompts\Expert - deeper context.txt" />
+    <EmbeddedResource Include="Prompts\Kids %288–12%29.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="DevExpress.ExpressApp" />
+    <PackageReference Include="DevExpress.ExpressApp.CloneObject" />
+    <PackageReference Include="DevExpress.ExpressApp.CodeAnalysis" />
+    <PackageReference Include="DevExpress.ExpressApp.ConditionalAppearance" />
+    <PackageReference Include="DevExpress.ExpressApp.Objects" />
+    <PackageReference Include="DevExpress.ExpressApp.Security" />
+    <PackageReference Include="DevExpress.ExpressApp.Security.Xpo" />
+    <PackageReference Include="DevExpress.ExpressApp.Validation" />
+    <PackageReference Include="DevExpress.ExpressApp.Xpo" />
+    <PackageReference Include="DevExpress.Persistent.Base" />
+    <PackageReference Include="DevExpress.Persistent.BaseImpl.Xpo" />
+    <PackageReference Include="Azure.Identity" />
+    <PackageReference Include="Microsoft.Data.SqlClient" />
+    <PackageReference Include="Microsoft.Extensions.AI" />
+    <PackageReference Include="Microsoft.Extensions.AI.OpenAI" />
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" />
+  </ItemGroup>
+	
+</Project>

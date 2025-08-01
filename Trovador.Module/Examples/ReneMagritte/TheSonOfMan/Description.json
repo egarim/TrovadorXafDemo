@@ -1,0 +1,13 @@
+{
+  "oid": "guid-value",
+  "name": "The Son of Man",
+  "title": "Le fils de l'homme",
+  "year": "1964-01-01",
+  "medium": "Oil on canvas",
+  "stylePeriod": "Surrealism",
+  "description": "The Son of Man is a surrealist self-portrait painted by Belgian artist René Magritte in 1964. It features a man in an overcoat and bowler hat standing before a sea and cloudy sky, with his face obscured by a hovering green apple—a motif Magritte often used. The painting explores themes of hidden identity and visual paradox.",
+  "artist": {
+    "oid": "guid-value",
+    "name": "René Magritte"
+  }
+}
