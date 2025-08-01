@@ -41,6 +41,7 @@
     <PackageReference Include="DevExpress.Persistent.BaseImpl.Xpo" />
     <PackageReference Include="DevExpress.RichEdit.Export" />
     <PackageReference Include="DevExpress.Win.Design" />
+    <PackageReference Include="System.Speech" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Trovador.Module\Trovador.Module.csproj" />
