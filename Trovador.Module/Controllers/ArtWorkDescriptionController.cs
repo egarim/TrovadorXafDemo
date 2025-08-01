@@ -14,6 +14,10 @@ namespace Trovador.Module.Controllers
         SimpleAction ToAudio;
         public ArtWorkDescriptionController() : base()
         {
+
+            this.TargetObjectType = typeof(ArtworkDescription);
+            this.TargetViewType = ViewType.DetailView;
+
             // Target required Views (use the TargetXXX properties) and create their Actions.
             TargetObjectType = typeof(ArtworkDescription);
             ToAudio = new SimpleAction(this, "Play Audio", "View");

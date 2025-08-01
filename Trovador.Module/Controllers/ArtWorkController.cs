@@ -16,6 +16,8 @@ namespace Trovador.Module.Controllers
         string SelectedLanguage;
         public ArtWorkController() : base()
         {
+            this.TargetObjectType = typeof(Artwork);
+            this.TargetViewType = ViewType.DetailView;
             // Target required Views (use the TargetXXX properties) and create their Actions.
             GenerateDescriptions = new SimpleAction(this, "Generate Descriptions", "View");
             GenerateDescriptions.Execute += GenerateDescriptions_Execute;
