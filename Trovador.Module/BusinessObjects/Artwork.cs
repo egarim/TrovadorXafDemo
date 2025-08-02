@@ -110,5 +110,27 @@ namespace Trovador.Module.BusinessObjects
                 return GetCollection<ArtworkDescription>(nameof(ArtworkDescriptions));
             }
         }
+
+        [Association("Artwork-ArtworkVersions")]
+        [DevExpress.Xpo.Aggregated]
+        public XPCollection<ArtworkVersion> ArtworkVersions
+        {
+            get
+            {
+                return GetCollection<ArtworkVersion>(nameof(ArtworkVersions));
+            }
+        }
+
+        [PersistentAlias("ArtworkVersions.Count")]
+        public int VersionCount
+        {
+            get => Convert.ToInt32(EvaluateAlias(nameof(VersionCount)));
+        }
+
+        [Browsable(false)]
+        public ArtworkVersion CurrentVersion
+        {
+            get => ArtworkVersions.FirstOrDefault(v => v.IsCurrentVersion);
+        }
     }
 }
